@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="mystyle.css" />
+    <title>Events in JS and more</title>
+  </head>
+  <body>
+    <h1>JS interactive page</h1>
+
+    <div class="flex-container">
+      <div>
+        <h4 class="myh4">Click the button to display your name</h4>
+        <input type="text" id="myName" />
+        <button type="button" id="btnName" class="btn btn-primary">
+          Click Me
+        </button>
+      </div>
+      <div>
+        <h4 class="myh4">Switch lights on mouse over</h4>
+        <section id="imgSec">
+          <img id="imageOff" src="images/lightoff.png" alt="it's dark" />
+        </section>
+      </div>
+      <div>
+        <h4> Double click the button to display content</h4>
+        <button type="button" id="btndbName" class="btn btn-warning">
+          Double Click Me
+        </button>
+        <p id="displayPara"></p>
+      </div>
+       <div>
+        <h4> Traffic Lights</h4>
+        <img src="">
+        <button type="button" id="btnStop" class="btn btn-secondary"> Stop</button>
+         <button type="button" id="btnReady" class="btn btn-secondary"> Ready</button>
+          <button type="button" id="btnGo" class="btn btn-secondary"> Go</button><br/><br/>
+          <div class="pole">
+              <div class="lights" id="stopDiv"></div>
+              <div class="lights" id="readyDiv"></div>
+              <div class="lights" id="goDiv"></div>
+          </div>
+      </div>
+      <div>
+        <h4> Change textbox border colours</h4>
+        <input type="text" id="firstName" class="form-control m-3" />
+        <input type="text" id="lastName" class="form-control m-3" /><br />
+        <button type="button" id="btn2Name" class="btn btn-danger">
+          Click Me
+        </button>
+      </div>
+      <div>
+        <h4> Validate the box (do not allow blank value  or less than 8 characters)</h4>
+        <br />
+        <span id="errMsg"></span>
+        <input type="text" id="myName2" class="form-control m-3" /> <br />
+        <button type="button" id="btnSub2" class="btn btn-primary">
+          Submit
+        </button>
+      </div>
+      <div>
+        <h4> Create a list of Hobbies with a prompt box and list them </h4>
+        <p>
+          <button type="button" id="btnHobbies" class="btn btn-primary">
+            Click Me
+          </button>
+        </p>
+        <section id="hobbies">
+          <ul></ul>
+        </section>
+      </div>
+      <div>
+        <h4> Challenge: Display your profile card from an object</h4>
+        <button type="button" id="btnProfile" class="btn btn-primary">
+            Display my Card
+          </button>
+          <div id="displayCard"></div>
+      </div>
+      <div>
+        <h4> Check to delete</h4>
+        
+        <ul class="list-group text-left">
+            
+          <li class="list-group-item">
+              <input type="checkbox" id="1">
+              Lorem ipsum dolor 
+         </li>
+          <li class="list-group-item">
+              <input type="checkbox" id="2">
+              sit amet consectetur
+         </li>
+         <li class="list-group-item">
+              <input type="checkbox" id="3">
+              Praesentium culpa 
+         </li>
+         <li class="list-group-item">
+              <input type="checkbox" id="4">
+              suscipit adipisci eum 
+         </li>
+         <li class="list-group-item">
+              <input type="checkbox" id="4">
+              assumenda dolores blanditiis
+         </li>
+        </ul>
+        <button type="button" id="btnDelete" class="btn btn-danger">
+            Delete
+          </button>
+    </div>
+      <div>
+        <h4> Build an image carousel</h4>
+      </div>
+      <div> Captcha generator</div>
+      <!-- https://codepen.io/manishjanky/pen/eRNKLL -->
+      <div> </div>
+     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="myscript.js"></script>
+  </body>
+</html>
