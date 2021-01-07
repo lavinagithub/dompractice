@@ -29,3 +29,27 @@
   margin: auto;
   margin-top:5px;
 }
+
+.stopwatch{
+  font-family: "Orbitron";
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  color: grey;
+  letter-spacing: 2px;
+}
+
+#myClock{
+font-family: "Roboto Mono", monospace;
+font-size:40px;
+}
+
+.rotate {
+    
+     transform: rotate(180deg);
+}
+
+.normal {
+   
+     transform: rotate(0deg);
+}
