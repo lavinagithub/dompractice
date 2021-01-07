@@ -43,8 +43,8 @@ function displayMsg() {
 // 4. Traffic Lights
 
 let btnStop = document.querySelector("#btnStop");
-// let btnReady = document.querySelector("#btnReady");
-// let btnGo = document.querySelector("#btnGo");
+let btnReady = document.querySelector("#btnReady");
+let btnGo = document.querySelector("#btnGo");
 let stopDiv = document.querySelector("#stopDiv");
 // let readyDiv = document.querySelector("#readyDiv");
 // let goDiv = document.querySelector("#goDiv");
@@ -102,6 +102,7 @@ function validateBox() {
 // 7.create a list of hobbies
 let hobbyBtn = document.querySelector("#btnHobbies");
 hobbyBtn.addEventListener("click", generateList);
+
 function generateList() {
   let hobbiesList = document.querySelector("#hobbies > ul");
   //console.log(hobbiesList);
@@ -164,8 +165,8 @@ function generateRandomString(length) {
   return result;
 }
 newcaptcha = generateRandomString(5);
-document.querySelector("#myCaptcha").innerHTML = newcaptcha;
 
+document.querySelector("#myCaptcha").innerHTML = newcaptcha;
 let btnCheckCaptcha = document.querySelector("#btnCheckCaptcha");
 btnCheckCaptcha.addEventListener("click", matchCaptcha);
 
@@ -202,7 +203,8 @@ function rotateImg() {
 
 //Palindrome
 const btnSubP = document.querySelector("#btnSubP");
-btnSubP.addEventListener("click", palindrome);
+const myTextBox = document.querySelector("#myText");
+myTextBox.addEventListener("blur", palindrome);
 
 function palindrome() {
   const myText = document.querySelector("#myText").value;
@@ -235,7 +237,7 @@ var auth = [
     password: "deer",
   },
 ];
-
+document.querySelector("#displayVMessage").innerHTML = "";
 function validate() {
   const myUsername = document.querySelector("#myUsername").value;
   const myPassword = document.querySelector("#myPassword").value;
@@ -247,6 +249,21 @@ function validate() {
         "Authenticated successully";
     }
   });
+}
+
+// Remove event listener
+
+const myRBtn = document.querySelector("#myRBtn");
+const myRDiv = document.querySelector("#myRDiv");
+myRBtn.addEventListener("click", removeHandler);
+
+myRDiv.addEventListener("mousemove", myFunction);
+function myFunction() {
+  document.querySelector("#demo").innerHTML = Math.random();
+}
+
+function removeHandler() {
+  myRDiv.removeEventListener("mousemove", myFunction);
 }
 
 // add items to cart *******************
@@ -282,7 +299,7 @@ objShopList.map((shopList) => {
 });
 
 function moveToCart() {
-  // alert("move");
+  //alert("move");
 }
 //
 
